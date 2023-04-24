@@ -1,0 +1,645 @@
+/* Ovo je glavni css za temu */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.navbar-logo{
+	background-color: #040D1E;
+	padding: 20px 30px;
+	color: white;
+	margin:auto;
+	text-align: center;
+}
+
+.navbar-logo h3{
+	margin-top: 10px;
+}
+
+.navbar-logo img{
+	height: 130px;
+	width: 130px;
+}
+
+.center{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+	font-size: 40px;
+}
+
+.center p{
+	font-size: 25px;
+}
+
+.hero-image{
+    position: relative;
+}
+
+.video{
+	width: 100%;
+  	height: 90vh;
+  	object-fit: cover;
+  	filter: brightness(50%);
+}
+.orange{
+	border: 1.6px solid #E78225;
+	width: 350px;
+}
+
+.upisi {
+	background-color: #E78225;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 20px 2px;
+	cursor: pointer;
+}
+
+.main-content{
+    max-width: 1100px;
+    margin: 45px auto;
+}
+
+.main-content .vijesti h1{
+	text-align: center;
+	font-size: 48px;
+	font-weight: 600;
+}
+
+.vijesti-sad{
+	margin: 67px 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 59px;
+}
+
+.vijest{
+	background-color: #D4ECFF;
+}
+
+.post{
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.post-image{
+	width: 100%;
+    height: 225px;
+}
+.post-title{
+	margin-top: 20px;
+	margin-bottom: 7px;
+}
+.post-title p{
+    color:black;
+    font-size: 16px;
+}
+
+.post-title h2{
+	margin-top: 7px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.post a{
+	text-decoration: none;
+	color: #E78225;
+	font-size: 16px;
+	font-weight: 600;
+
+}
+
+.post-size{
+	margin: 8px 18px;
+}
+
+.post-text{
+	margin-top: 8px;
+}
+
+.blue{
+	background-color: #081631;
+	border: none;
+	color: #E78225;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 20px 2px;
+	cursor: pointer;
+	font-weight: 600;
+	position: relative;
+	left: 41.5%;
+}
+
+.upisi2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.upisi2 .upisi-left{
+    overflow: hidden;
+}
+
+.upisi2 .upisi-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upisi2 .upisi-right{
+    background-color:#040D1E;
+    display: flex;
+    align-items: center;
+}
+
+.upisi2 .upisi-right .upisi-content{
+    padding: 0 60px;
+}
+
+.upisi2 .upisi-right .upisi-content h1{
+    color: #E78225;
+    font-size: 25px;
+    line-height: 26px;
+    padding-bottom: 35px;
+    font-weight: 600;
+}
+
+.upisi2 .upisi-right .upisi-content p{
+    color: white;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 65px;
+}
+
+.upisi2 .upisi-right .upisi-content a{
+    line-height: 26px;
+    color: #E78225;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+
+.galerija-slike{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 5px;
+}
+
+.galerija-slike img{
+	width: 100%;
+}
+
+
+.galerija h1{
+	text-align: center;
+	font-size: 48px;
+	font-weight: 500;
+	margin: 100px 0;
+}
+
+.partneri{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 3px;
+}
+
+.partneri img{
+	width: 100%;
+	height: 180px;
+}
+
+.sponzori h1{
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin: 150px 0 50px 0;
+}
+
+.footer{
+	background: #081631;
+	height: 100%;
+	width: 100%;
+	padding: 40px 0;
+	color: #fff;
+} 
+
+.footer-content{
+	max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+	justify-content: space-between;
+}
+
+.footer-content button{
+	background-color:#3B5998;
+	padding: 13px 23px;
+	cursor: pointer;
+	color: #FFF;
+	border-radius: 15px;
+	border: none;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.footer-right{
+	display: flex;
+	align-items: center;
+}
+
+.footer-left{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.footer-rights{
+	background-color: #040D1E;
+	color:#FFF;
+	width: 100%;
+	height: 100%;
+	padding: 40px 0;
+}
+
+.rights{
+	max-width: 1100px;
+    margin: 0 auto;
+	display: flex;
+}
+
+
+
+.rights a{
+	margin-left: 100px;
+	text-decoration: none;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.rights a:hover{
+	color: #E78225;
+}
+
+
+@media (max-width:500px) {
+	.footer{
+	  display: flex;
+	  margin-top: 10px;
+	  margin-bottom: 20px;
+}	
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: #081631;
+	z-index: 999;
+	position: relative;
+}
+
+.menu{
+	max-width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+	background-color: #081631;
+}
+
+
+nav ul li ul li:hover { 
+	background: #000000; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	color: #E78225; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+}
+
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		background-color: #081631;
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		color: #E78225; 
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #081631;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #081631; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+
+@media (max-width: 991px){
+    .upisi2 .upisi-right .upisi-content{
+        padding: 10px;
+    }
+
+	.main-content{
+		padding: 0 40px;
+	}
+}
+
+@media (max-width: 768px){
+
+	.main-content{
+		padding: 0 40px;
+	}
+    .upisi2{
+        width: 100%;
+        grid-template-columns: 1fr;
+}
+
+    .upisi2 .upisi-right{
+        padding: 70px 50px;
+    }
+
+	.partneri{
+		width: 100%;
+        grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.partneri img{
+		width: 175px;
+		height: 175px;
+	}
+	
+
+	.vijesti-sad{
+		width: 100%;
+        grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.vijesti-sad img{
+		height: 350px;
+	}
+
+	.blue{
+		left: 35%;
+	}
+
+	.footer-content{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-content .facebook{
+		margin: 20px;
+	}
+
+	.footer-left{
+		flex-direction: column;
+	}
+
+	.rights{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.rights a{
+		margin-left: 0;
+	}
+
+	.rights p{
+		margin: 10px;
+	}
+}
